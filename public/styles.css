@@ -54,7 +54,7 @@ h1 {
 .search-container {
   display: flex;
   margin: 1.5rem auto 0;
-  width: 100%;
+  width: 90%;
 }
 
 #spotifyUrl {
@@ -135,7 +135,7 @@ h1 {
 
 .download-button {
   display: block;
-  width: 80%;
+  width: 90%;
   padding: 0.75rem;
   background-color: var(--primary-color);
   color: var(--text-color);
