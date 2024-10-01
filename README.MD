@@ -1,3 +1,5 @@
+![img-sazumiviki](http://cdn.sazumi.moe/f/sv-vXjPr.png)
+
 # Spotify Downloader
 
 Spotify Downloader is a simple web application that allows users to download their favorite Spotify songs. This project is for educational purposes only and should be used responsibly while respecting copyright laws and artists' rights.
