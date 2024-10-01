@@ -1,0 +1,35 @@
+<!--
+  Spotify Downloader
+  Author: SazumiVicky
+  Github: https://github.com/sazumivicky/spotify-dl
+  Instagram: https://instagram.com/moe.sazumiviki
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazumi Cloud - Spotify Downloader</title>
+    <meta name="description" content="Download your favorite Spotify songs with ease using our free online tool. No registration required.">
+    <link rel="icon" class="js-site-favicon" type="image/ico" href="https://cdn.jsdelivr.net/gh/SazumiVicky/Storage@main/sazumiviki-ico.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Downloader</h1>
+        <form id="downloadForm">
+            <div class="search-container">
+                <input type="text" id="spotifyUrl" placeholder="Enter Spotify song URL" required>
+                <button type="submit" class="search-button">🔍</button>
+            </div>
+        </form>
+        <div id="result"></div>
+        <p class="disclaimer">Disclaimer: This tool is for educational purposes only. Please respect copyright laws and artists' rights.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

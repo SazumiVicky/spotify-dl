@@ -1,0 +1,191 @@
+/*
+  Spotify Downloader
+  Author: SazumiVicky
+  Github: https://github.com/sazumivicky/spotify-dl
+  Instagram: https://instagram.com/moe.sazumiviki
+*/
+
+:root {
+  --primary-color: #1DB954;
+  --background-color: #121212;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --text-color: #ffffff;
+  --text-secondary: #b3b3b3;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://wallpapergod.com/images/hd/dark-anime-1920X1080-wallpaper-ajdpu7akxqmslmb4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+#spotifyUrl {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  font-family: 'Poppins', Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+#spotifyUrl:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: 'Poppins', Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
+
+.song-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.song-info:hover {
+  transform: translateY(-5px);
+}
+
+.song-info h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.album-cover {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.album-cover:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.download-button {
+  display: block;
+  width: 80%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  margin: 1.5rem auto 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.error {
+  color: #ff4444;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 185, 84, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(29, 185, 84, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 185, 84, 0);
+  }
+}
+
+.search-button, .download-button {
+  animation: pulse 2s infinite;
+}

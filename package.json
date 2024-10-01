@@ -1,0 +1,27 @@
+{
+  "name": "spotify-dl",
+  "version": "1.0.0",
+  "description": "Spotify Downloader - Download your favorite Spotify songs with ease using our free online tool. No registration required.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "spotify",
+    "download",
+    "music",
+    "mp3",
+    "downloader",
+    "spotify downloader",
+    "spotify music downloader",
+    "spotify download music"
+  ],
+  "author": "SazumiVicky",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "node-fetch": "^3.3.2"
+  }
+}
