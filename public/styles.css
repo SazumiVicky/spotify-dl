@@ -54,6 +54,7 @@ h1 {
 .search-container {
   display: flex;
   margin: 1.5rem auto 0;
+  width: 100%;
 }
 
 #spotifyUrl {
