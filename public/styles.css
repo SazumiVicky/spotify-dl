@@ -207,3 +207,32 @@ h1 {
     max-width: 200px;
   }
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.social-icon span {
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-secondary);
+}
+
+.social-icon a {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon a:hover {
+  color: var(--primary-color);
+}
