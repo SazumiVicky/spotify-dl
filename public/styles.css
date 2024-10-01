@@ -17,8 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://wallpapergod.com/images/hd/dark-anime-1920X1080-wallpaper-ajdpu7akxqmslmb4.jpeg');
-  background-size: cover;
+  background-image: url('http://cdn.sazumi.moe/f/sv-r7l2U.png');
+  background-repeat: repeat;
   background-position: center;
   background-attachment: fixed;
 }
